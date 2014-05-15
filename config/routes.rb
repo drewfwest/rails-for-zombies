@@ -1,6 +1,6 @@
 Zombies::Application.routes.draw do
   resources :zombies
-
+  root to: "zombies#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
