@@ -6434,3 +6434,124 @@ Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+
+
+Started GET "/zombies" for 127.0.0.1 at 2014-05-15 20:52:16 -0700
+Processing by ZombiesController#index as HTML
+  [1m[35mZombie Load (0.3ms)[0m  SELECT "zombies".* FROM "zombies" 
+  [1m[36mBrain Load (0.3ms)[0m  [1mSELECT "brains".* FROM "brains" WHERE "brains"."zombie_id" IN (3, 4)[0m
+  Rendered zombies/index.html.erb within layouts/application (2.4ms)
+Warning. Error encountered while saving cache /Users/apprentice/desktop/drewfwest/rails-for-zombies/tmp/cache/sass/694c1565d259a2d5787cd5ae2cc365ab20c75d8d/role.css.scssc: can't dump anonymous class #<Class:0x007faa64378d20>
+Compiled role.css  (25ms)  (pid 13333)
+Compiled application.css  (32ms)  (pid 13333)
+Compiled role.js  (191ms)  (pid 13333)
+Compiled application.js  (226ms)  (pid 13333)
+Completed 200 OK in 333.2ms (Views: 310.3ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2014-05-15 20:52:16 -0700
+Served asset /zombies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-15 20:52:16 -0700
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/role.css?body=1" for 127.0.0.1 at 2014-05-15 20:52:16 -0700
+Served asset /role.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-15 20:52:16 -0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-15 20:52:16 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-15 20:52:16 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/role.js?body=1" for 127.0.0.1 at 2014-05-15 20:52:16 -0700
+Served asset /role.js - 200 OK (2ms)
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2014-05-15 20:52:16 -0700
+Served asset /zombies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-15 20:52:16 -0700
+Served asset /application.js - 304 Not Modified (54ms)
+
+
+Started GET "/zombies/4" for 127.0.0.1 at 2014-05-15 20:52:18 -0700
+Processing by ZombiesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mZombie Load (0.7ms)[0m  SELECT "zombies".* FROM "zombies" WHERE "zombies"."id" = $1 LIMIT 1  [["id", "4"]]
+  Rendered zombies/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 14.4ms (Views: 11.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-15 20:52:18 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-15 20:52:18 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2014-05-15 20:52:18 -0700
+Served asset /zombies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-15 20:52:18 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-15 20:52:18 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2014-05-15 20:52:18 -0700
+Served asset /zombies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-15 20:52:18 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/zombies" for 127.0.0.1 at 2014-05-15 20:52:19 -0700
+Processing by ZombiesController#index as HTML
+  [1m[36mZombie Load (0.4ms)[0m  [1mSELECT "zombies".* FROM "zombies" [0m
+  [1m[35mBrain Load (0.3ms)[0m  SELECT "brains".* FROM "brains" WHERE "brains"."zombie_id" IN (3, 4)
+  Rendered zombies/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 9.9ms (Views: 7.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-15 20:52:19 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-15 20:52:19 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-15 20:52:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-15 20:52:19 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2014-05-15 20:52:19 -0700
+Served asset /zombies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2014-05-15 20:52:19 -0700
+Served asset /zombies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-15 20:52:19 -0700
+Served asset /application.js - 304 Not Modified (1ms)
